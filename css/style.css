@@ -70,6 +70,7 @@ body {
     background: #e7e4d8;
     border: 3px solid #d6d3c8;
     padding: 20px;
+    align-self: flex-start;
 }
 
 @media (max-width: 739px) {
@@ -81,6 +82,7 @@ body {
 .filtro h2 {
     font-size: 1.125em;
     padding: 10px 0;
+    font-weight: bold;
 }
 
 .filtro ul {
