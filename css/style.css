@@ -96,7 +96,7 @@ body {
 }
 
 .filtro li::after {
-	content: '';
+    content: "";
     display: block;
     width: 20px;
     height: 20px;
@@ -114,7 +114,7 @@ body {
     display: inline-block;
     width: 15px;
     height: 15px;
-	background: currentColor;
+    background: currentColor;
     border-radius: 50%;
     vertical-align: middle;
 }
