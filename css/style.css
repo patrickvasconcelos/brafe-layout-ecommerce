@@ -43,17 +43,18 @@ body {
     padding: 20px 0;
 }
 
-.header-menu ul li {
+.header-menu li {
     display: inline-block;
 }
 
 .header-menu li a {
     display: block;
-    margin: 5px 10px 5px 0;
+    padding: 5px 10px 5px 0;
     text-decoration: none;
     color: #373737;
     font-size: 1.125em;
 }
+
 .header-menu li a::before {
     content: "•";
     padding-right: 10px;
@@ -63,43 +64,15 @@ body {
     content: "";
 }
 
-/* Conteúdo */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.container::after,
-.container::before {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Filtro */
+/* FILTRO */
 
 .filtro {
     background: #e7e4d8;
     border: 3px solid #d6d3c8;
-    width: 300px;
-    margin: 0 10px;
     padding: 20px;
-    float: left;
-}
-
-@media (min-width: 740px) and (max-width: 980px) {
-    .container {
-        max-width: 720px;
-    }
-    .filtro {
-        width: 220px;
-    }
 }
 
 @media (max-width: 739px) {
-    .container {
-        max-width: 300px;
-    }
     .filtro {
         display: none;
     }
@@ -118,12 +91,12 @@ body {
 
 .filtro li {
     font-style: italic;
-    font-style: 1.125em;
+    font-size: 1.125em;
     line-height: 2em;
 }
 
 .filtro li::after {
-    content: "";
+	content: '';
     display: block;
     width: 20px;
     height: 20px;
@@ -141,7 +114,7 @@ body {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-color: currentColor;
+	background: currentColor;
     border-radius: 50%;
     vertical-align: middle;
 }
@@ -156,32 +129,18 @@ body {
     box-shadow: 20px 0 0 0 currentColor, 40px 0 0 0 currentColor,
         60px 0 0 0 currentColor;
 }
+
 .sabor-5 {
     color: #d7a54d;
     box-shadow: 20px 0 0 0 currentColor, 40px 0 0 0 currentColor,
         60px 0 0 0 currentColor, 80px 0 0 0 currentColor;
 }
 
-/* Produtos */
-
-.produtos {
-    width: 620px;
-    margin: 0 10px;
-    float: left;
-}
+/*PRODUTOS*/
 
 .produtos h1 {
     font-size: 3em;
     font-weight: normal;
-}
-
-.produtos li {
-    width: 300px;
-    float: left;
-}
-
-.produtos li:nth-child(odd) {
-    margin-right: 20px;
 }
 
 .produtos li img {
@@ -206,25 +165,7 @@ body {
     font-weight: normal;
 }
 
-@media (min-width: 740px) and (max-width: 980px) {
-    .produtos {
-        width: 460px;
-    }
-    .produtos li {
-        width: 220px;
-    }
-}
-
-@media (max-width: 739px) {
-    .produtos {
-        width: 300px;
-    }
-    .produtos li {
-        width: 140px;
-    }
-}
-
-footer {
+.footer {
     background: #e7e4d8;
     text-align: center;
     padding: 60px 0;
